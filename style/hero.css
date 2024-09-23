@@ -1,0 +1,50 @@
+.hero_img{
+    padding-top: 15%;
+    margin: auto;
+    background-image: url('../img/hero.png');
+    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat;  */
+    border-radius: 40px;
+    width: 80%;
+    /* display: inline-block; */
+}
+
+.text_header{
+    padding-left: 9.766%;
+}
+
+#h1{
+    margin: 0;
+    /* padding-top: 22.787%; */
+    /* padding-left: 9.766%; */
+    width: 75%;
+    font-size: 500%;
+    line-height: 80%;
+    color: #1D2838;
+}
+
+.text_header p{
+    margin: 0;
+    padding-top: 1.444%;
+    font-size: 160%;
+    color: #5D61A6;   
+}
+
+.container_btms_hero_img{
+    display: flex;
+    width: 22.787%;
+}
+
+.btm_contact{
+    border: solid 2px #2A7CFF;
+    border-radius: 40px;
+    color: #2A7CFF;
+}
+
+.btm_more_detailed{
+    border: solid 2px #2A7CFF;
+    border-radius: 40px;
+    background-color: #2A7CFF;
+    color: #fff;
+}

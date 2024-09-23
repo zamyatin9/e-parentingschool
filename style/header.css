@@ -1,9 +1,7 @@
 .header{
     padding-top: 1.823%;
-    width: 100%;
-  
-
-    
+    padding-bottom: 1.823%;
+    width: 100%;    
 }
 
 .element_header{
@@ -11,7 +9,6 @@
     width: 100%;
     display: flex;
     /* margin-left: 46.751%; */
-
     position: relative;
     align-items: center;
 }
@@ -24,16 +21,24 @@
 }
 
 .horizontal_list {
-    border: #000 solid 2px;
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
+    /* border: #000 solid 2px; */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    /* width: 25.418%; */
+    width: 100%;
+    justify-content: center;
+    margin-left: 20%;
+    font-size: 140%;
+    
 }
 
 .horizontal_list p {
-    margin-right: 20px; /* Отступ между элементами списка */
+    margin-right: 4.313%;
+}
+
+.horizontal_list a:hover {
+    color: #2A7CFF;
 }
 
 .horizontal-list p:last-child {
@@ -47,18 +52,32 @@
 
 .btm_go_to_course{
     margin-right: 5.417%;
-    width: 9.86%;
+    /* width: 12%; */
+    padding-top: 0.9%;
+    padding-bottom: 0.9%;
+    padding-left: 1.3%;
+    padding-right: 1.3%;
     /* margin-left: auto; */
+    background-color: #EDF2FA;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btm_go_to_course:hover{
+    background-color: #1D2838;
+    color: #EDF2FA;
+  
 }
 
 .btm_go_to_course a{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right:5%;
-    text-decoration: none;
-    color: #1D2838;
-    background-color: #EDF2FA;
-    border-radius: 40px;
    
+    text-decoration: none;
+    
+    color: inherit;
+    font-size: 140%;
+    /* letter-spacing: 1px; */
+}
+
+.btm_go_to_course a:hover{
+    color: inherit;
 }
