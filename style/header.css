@@ -1,0 +1,64 @@
+.header{
+    padding-top: 1.823%;
+    width: 100%;
+  
+
+    
+}
+
+.element_header{
+    
+    width: 100%;
+    display: flex;
+    /* margin-left: 46.751%; */
+
+    position: relative;
+    align-items: center;
+}
+
+.element_menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    /* margin-right: 27.348%; */
+}
+
+.horizontal_list {
+    border: #000 solid 2px;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    /* width: 25.418%; */
+}
+
+.horizontal_list p {
+    margin-right: 20px; /* Отступ между элементами списка */
+}
+
+.horizontal-list p:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
+}
+
+.horizontal_list a {
+    text-decoration: none;
+    color: #000; 
+}
+
+.btm_go_to_course{
+    margin-right: 5.417%;
+    width: 9.86%;
+    /* margin-left: auto; */
+}
+
+.btm_go_to_course a{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right:5%;
+    text-decoration: none;
+    color: #1D2838;
+    background-color: #EDF2FA;
+    border-radius: 40px;
+   
+}
