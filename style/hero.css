@@ -1,5 +1,5 @@
 .hero_img{
-    padding-top: 15%;
+    /* padding-top: 15%; */
     margin: auto;
     background-image: url('../img/hero.png');
     background-size: cover;
@@ -11,6 +11,7 @@
 }
 
 .text_header{
+    padding-top: 15%;
     padding-left: 9.766%;
 }
 
@@ -32,14 +33,32 @@
 }
 
 .container_btms_hero_img{
+    padding-top: 2%;
     display: flex;
-    width: 22.787%;
+    /* width: 22.787%; */
+    padding-left: 9.766%;
+    padding-bottom: 20%;
 }
 
-.btm_contact{
+.btm_contact {
     border: solid 2px #2A7CFF;
     border-radius: 40px;
     color: #2A7CFF;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    font-size: 140%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 20%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.btm_contact p {
+    margin: 0;
 }
 
 .btm_more_detailed{
@@ -47,4 +66,17 @@
     border-radius: 40px;
     background-color: #2A7CFF;
     color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 140%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 2%;
+}
+
+.btm_more_detailed p{
+    margin: 0;
 }

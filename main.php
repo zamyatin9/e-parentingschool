@@ -6,10 +6,11 @@
      <div class="container_btms_hero_img">
         <div class="btm_contact">
             <p>Связаться с нами</p>
-            </div>
+        </div>
         <div class="btm_more_detailed">
             <p>Подробнее</p>
         </div>
      </div>    
     <!-- <img src="img/hero.png"> -->
+     
 </div>
