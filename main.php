@@ -14,3 +14,37 @@
     <!-- <img src="img/hero.png"> -->
      
 </div>
+
+<div class="container_icons">
+
+    <div class="element_icons">
+        <div class="ico">
+            <img src="img/calendar.png">
+        </div>
+        <div class="">Круглосуточный доступ</div>
+    </div>   
+
+    <div class="element_icons">
+        <div class="ico">
+            <img src="img/everone.png">
+        </div>
+        <div class="">Персональный подход к каждому </div>
+    </div>  
+
+    <div class="element_icons">
+        <div class="ico">
+            <img src="img/online.png">
+        </div>
+        <div class="">Доступ к курсу из любой точки</div>
+    </div>  
+
+    <div class="element_icons">
+        <div class="ico">
+            <img src="img/call.png">
+        </div>
+        <div class="">Регулярная обратная связь</div>
+    </div>  
+
+   
+
+</div>

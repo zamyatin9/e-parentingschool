@@ -57,6 +57,11 @@
     margin-right: 2%;
 }
 
+.btm_contact:hover{
+    background-color: #2A7CFF;
+    color: #fff;
+}
+
 .btm_contact p {
     margin: 0;
 }
@@ -77,6 +82,45 @@
     margin-bottom: 2%;
 }
 
+.btm_more_detailed:hover{
+    background-color: transparent;
+    color: #2A7CFF;
+}
+
 .btm_more_detailed p{
     margin: 0;
+}
+
+.container_icons{
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding-top: 4.414%;
+}
+
+.element_icons {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin: 20px; 
+}
+
+.ico{
+    /* width: 15vw;
+    height: 15vh; */
+    max-width: 180px;
+    max-height: 180px;
+    background-color: #E7EFFB; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    overflow: hidden;
+   
+}
+
+.ico img {
+    width: 70%; /* Ширина изображения */
+    height: auto;
 }
