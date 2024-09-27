@@ -1,0 +1,64 @@
+.container_purpose{
+    align-items: center;
+    max-width: 1200px; /* Ограничение ширины контейнера, если нужно */
+    width: 100%; /* Ширина 100% для адаптивности */
+    margin: auto;
+    
+}
+
+.h1_purpose{
+    margin: auto;
+    width: 100%;
+    text-align: center; /* Центрируем текст по горизонтали */
+    color: #2A7CFF;
+    font-size: 610%;
+}
+
+.text_purpose{
+    font-size: 160%;
+    line-height: 110%;
+}
+
+.container_purpose p{
+    margin: 0;
+
+}
+
+.bloks{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    max-width: 1200px; /* Ограничение ширины контейнера, если нужно */
+    width: 100%; /* Ширина 100% для адаптивности */
+    margin: auto;
+}
+
+.left_block_purpose{
+    width: 50%;
+}
+
+.img_child{
+    background-image: url(../img/purpose.jpg);
+    height: 650px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.right_block_purpose{
+    background-color: #EDF2FA;
+    border-radius: 40px;
+    padding: 2%;
+}
+
+.h2_right_block_purpose{
+    text-align: center;
+}
+
+.moduls{
+    display: flex; /* Используем Flexbox для расположения элементов в строку */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    margin-bottom: 15px; /* Отступ между модулями */
+}
+

@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="style/header.css">
         <link rel="stylesheet" href="style/hero.css">
         <link rel="stylesheet" href="style/ico.css">
+        <link rel="stylesheet" href="style/about.css">
+        <link rel="stylesheet" href="style/purpose.css">
     <title>Document</title>
 </head>
 <body>

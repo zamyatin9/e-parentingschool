@@ -1,0 +1,70 @@
+.container_about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Ограничение ширины контейнера, если нужно */
+    width: 100%; /* Ширина 100% для адаптивности */
+    margin: auto;
+}
+
+.left_container{
+    width: 50%;
+}
+
+.h1_about{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #2A7CFF;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.container_text_about p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.text_about{
+    
+    
+    font-weight: 400;
+    font-size: 40px;
+   
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.btm_go_to_course_about{
+    display: table;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px 40px;
+    /* border: 2px solid #1d2838; */
+    border-radius: 50px;
+    transition: .3s ease all;
+    
+    background-color: #2A7CFF;
+}
+
+.btm_go_to_course_about a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.right_container{
+    width: 50%;
+}
+
+.img_about {
+    background-image: url(../img/about.jpg);
+ 
+    height: 650px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
