@@ -9,9 +9,9 @@
 
 .h1_purpose{
     margin: auto;
-    width: 100%;
+    /* width: 80%; */
     text-align: center;
-    font-size: 112px;
+    font-size: 103px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,8 +24,7 @@
 
 .text_purpose{
     display: flex;
-    width: 75%;
-    
+    /* width: 75%; */
     /* flex-direction: column; */
     /* justify-content: center; */
     flex-shrink: 0;
@@ -35,6 +34,7 @@
     line-height: 110%;
     font-style: normal;
     font-weight: 400;
+    
 }
 
 .container_purpose p{
@@ -46,13 +46,14 @@
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    max-width: 1200px; /* Ограничение ширины контейнера, если нужно */
+    max-width: 1380px; /* Ограничение ширины контейнера, если нужно */
     width: 100%; /* Ширина 100% для адаптивности */
     margin: auto;
+    margin-top: 1.957%;
 }
 
 .left_block_purpose{
-    width: 50%;
+    width: 49.711%;
 }
 
 .img_child{
@@ -65,25 +66,61 @@
 }
 
 .right_block_purpose{
-    width: 50%;
+    width: 44.711%;
     background-color: #EDF2FA;
     border-radius: 40px;
-    padding: 2%;
+    padding-top: 1.45%;
+    padding-bottom: 1.45%;
+    padding-left: 2.175%;
+    padding-right: 2.175%;
+
 }
 
 .h2_right_block_purpose{
+    display: flex;
+    width: 605px;
+    height: 29px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #2A7CFF;
     text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 69.444%;
 }
 
 .moduls{
     display: flex; /* Используем Flexbox для расположения элементов в строку */
     align-items: flex-start; /* Выравниваем элементы по верхнему краю */
-    margin-bottom: 15px; /* Отступ между модулями */
+    padding-top: 4.053%;
 }
 
 .number_moduls{
+    display: flex;
+    /* height: 16.4%; */
+    width: 9.725%;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
     background-color: #FDD2D2;
+    border-radius: 15px;
     color: #FF4646;
+    text-align: center;
+    font-size: 49.5px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 52.083%;*/
 }
 
+.moduls p{
+    width: 85.253%;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    padding-left: 5.026%;
+}
 

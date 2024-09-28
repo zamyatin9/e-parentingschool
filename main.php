@@ -129,8 +129,9 @@
   <div class="container_all_call_me">
     <div class="container_head">ПОЛУЧИТЬ ДОСТУП К КУРСУ УЖЕ СЕЙЧАС</div>
     <div class="container_call">
-        <div class="buttom_tell_number">Ваш номер телефона</div>
-        <div class="button_call_me">Перезвони мне</div>
+        <!-- <div class="buttom_tell_number">Ваш номер телефона</div> -->
+        <a href="#" class="button_call_me">Перейти к курсу</a>
+        
     </div>
   </div>
 
@@ -148,8 +149,8 @@
             <div class="h1_left_block_resulte">После</div>
             <div class="element_resulte">Уверен в своих действиях</div>
             <div class="element_resulte">Малыш чувствует себя комфортно</div>
-            <div class="element_resulte">Мы уверены, что малыш получает пользу от каждого нашего движения</div>
-            <div class="element_resulte">Вы находитесь в спокойствии и наслаждаетесь гармоничным развитием малыша</div>
+            <div id="element_resulte" class="element_resulte">Мы уверены, что малыш получает пользу от каждого нашего движения</div>
+            <div id="element_resulte" class="element_resulte">Вы находитесь в спокойствии и наслаждаетесь гармоничным развитием малыша</div>
             <div class="element_resulte">Вы понимаете язык тела малыша</div>
         </div>
    </div> 
