@@ -1,41 +1,31 @@
-.container_icons{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 4.414%;
-    width: 74.476%;  
-    position: relative;
-    max-width: 1350px;
+.container_icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.188%;
+    max-width: 1440px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 5%;
+    margin-bottom: 2.188%;
+    overflow-x: auto; /* Позволяет прокручивать содержимое, если оно не помещается */
 }
 
 .element_icons {
-    /* display: flex; 
-    flex-direction: column;  */
+    display: flex; 
+    flex-direction: column; 
     align-items: center; 
-    text-align: center; 
-    /* margin: 20px;  */
-
-    width: 20%;
-    padding: 0 30px;
+    margin: 4.717%;
+    flex: 1 0 150px; /* Позволяет элементам занимать равное пространство */
+    min-width: 150px; /* Минимальная ширина элемента */
 }
 
-.ico{
+.ico {
     width: 150px;
     height: 150px;
-    /* max-width: 120px;
-    max-height: 120px; */
     background-color: #E7EFFB;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;    
-    margin: 0 auto;
+    margin-bottom: 22px;
 }
 
 .ico img {
@@ -43,11 +33,46 @@
     height: auto;
     max-width: 100px;
     max-height: 100px;
-   }
+}
 
-   .text_element_ico{
-    padding-top: 4%;
+.text_element_ico {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.5;
-   }
+    text-align: center;
+}
+
+/* Медиа-запросы для адаптации */
+@media (max-width: 1024px) {
+    .container_icons {
+        flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+        justify-content: center; /* Центрируем элементы */
+    }
+
+    .element_icons {
+        margin: 2%; /* Уменьшаем отступы на средних экранах */
+        flex-basis: calc(33.333% - 4%); /* Три элемента в строке с учетом отступов */
+    }
+}
+
+@media (max-width: 768px) {
+    .element_icons {
+        margin: 2%; /* Уменьшаем отступы на мобильных устройствах */
+        flex-basis: calc(50% - 4%); /* Два элемента в строке на мобильных устройствах */
+    }
+
+    .text_element_ico {
+        font-size: 18px; /* Уменьшаем размер шрифта на мобильных устройствах */
+    }
+}
+
+@media (max-width: 480px) {
+    .element_icons {
+        flex-basis: calc(100% - 4%); /* Один элемент в строке на маленьких экранах */
+        margin-bottom: 20px; /* Добавляем отступ между элементами */
+    }
+
+    .text_element_ico {
+        font-size: 16px; /* Дополнительное уменьшение шрифта */
+    }
+}

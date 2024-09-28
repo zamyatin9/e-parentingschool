@@ -1,0 +1,28 @@
+.container_resulte{
+    margin: auto;
+    display: flex;
+    align-items: flex-start; 
+    width: 62%;
+}
+
+.left_block_resulte{
+    width: 50%;
+}
+
+.h1_left_block_resulte{
+    text-align: center;
+}
+
+.left_block_resulte .element_resulte{
+    background-color: #FDD2D2;
+    color:  #FF3333;
+}
+
+.right_block_resulte{
+    width: 50%;
+}
+
+.right_block_resulte .element_resulte{
+    background-color: #EDF2FA;
+    color:  #2A7CFF;
+}

@@ -1,105 +1,132 @@
-.hero_img{
-    /* padding-top: 15%; */
+.hero_img {
     margin: auto;
     background-image: url('../img/hero.png');
     background-size: cover;
-    /* background-position: center; */
-    /* background-repeat: no-repeat;  */
     border-radius: 40px;
-
-    /* display: inline-block; */
-
-
-    /* display: flex; */
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
+    width: 90%;
 }
 
-.text_header{
+.text_header {
     padding-top: 15%;
     padding-left: 9.766%;
 }
 
-#h1{
+#h1 {
     margin: 0;
-    /* padding-top: 22.787%; */
-    /* padding-left: 9.766%; */
     width: 70%;
     font-size: 500%;
     line-height: 80%;
     color: #1D2838;
 }
 
-.text_header p{
+.text_header p {
     margin: 0;
     padding-top: 1.444%;
     font-size: 160%;
     color: #5D61A6;   
 }
 
-.container_btms_hero_img{
-    padding-top: 2%;
-    display: flex;
-    width: 22.787%;
+.container_btms_hero_img {
     padding-left: 9.766%;
-    padding-bottom: 20%;
-
-   
-    justify-content: space-between;
-    
+    padding-bottom: 20%;   
+    display: flex;
+    gap: 20px; /* Отступ между кнопками */
+    padding-top: 2%; /* Отступ сверху */
 }
 
-.btm_contact {
+.btm_contact a {
+    display: inline-block; 
+    padding: 15px 30px; 
     border: solid 2px #2A7CFF;
-    border-radius: 40px;
-    color: #2A7CFF;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 1.2%;
-    padding-right: 1.2%;
-    font-size: 140%;
-    /* display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    width: 20%; */
-    margin-bottom: 2%;
-    margin-right: 2%;
+    border-radius: 40px; 
+    font-size: 22px; 
+    text-decoration: none; 
+    text-align: center; 
+    color: #2A7CFF; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-.btm_contact:hover{
+.btm_contact a:hover {
     background-color: #2A7CFF;
     color: #fff;
 }
 
-.btm_contact p {
-    margin: 0;
-}
-
-.btm_more_detailed{
-    border: solid 2px #2A7CFF;
-    border-radius: 40px;
+.btm_more_detailed a {
     background-color: #2A7CFF;
-    color: #fff;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 4%;
-    padding-right: 4%;
-    font-size: 140%;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    margin-bottom: 2%;
+    display: inline-block; 
+    padding: 15px 30px; 
+    border-radius: 40px; 
+    font-size: 22px; 
+    text-decoration: none; 
+    text-align: center; 
+    color: #fff; 
+    border: solid 2px #2A7CFF;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-.btm_more_detailed:hover{
+.btm_more_detailed a:hover {
     background-color: transparent;
     color: #2A7CFF;
 }
 
-.btm_more_detailed p{
+.btm_more_detailed p {
     margin: 0;
 }
 
+/* Медиа-запросы для адаптации */
+@media (max-width: 1024px) {
+    #h1 {
+        font-size: 300%; /* Уменьшаем размер заголовка на средних экранах */
+        width: 90%; /* Ширина заголовка на весь экран */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .text_header p {
+        font-size: 120%; /* Уменьшаем размер текста на средних экранах */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .container_btms_hero_img {
+        flex-direction: column; /* Вертикальное расположение кнопок на средних экранах */
+        padding-left: 0; /* Убираем отступ слева */
+        gap: 10px; /* Уменьшаем отступ между кнопками */
+        padding-bottom: 10%; /* Увеличиваем нижний отступ для кнопок */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero_img {
+        padding-top: 10%; /* Уменьшаем верхний отступ для мобильных устройств */
+        padding-bottom: 10%; /* Уменьшаем нижний отступ для мобильных устройств */
+        align-items: center; /* Центрируем элементы по горизонтали */
+        text-align: center; /* Центрируем текст */
+    }
+
+    #h1 {
+        font-size: 200%; /* Уменьшаем размер заголовка на мобильных устройствах */
+        width: 100%; /* Ширина заголовка на весь экран */
+    }
+
+    .text_header p {
+        font-size: 100%; /* Уменьшаем размер текста на мобильных устройствах */
+    }
+
+    .container_btms_hero_img {
+        flex-direction: column; /* Вертикальное расположение кнопок на мобильных устройствах */
+        padding-left: 0; /* Убираем отступ слева */
+        gap: 10px; /* Уменьшаем отступ между кнопками */
+        padding-bottom: 10%; /* Увеличиваем нижний отступ для кнопок */
+    }
+}
+
+@media (max-width: 480px) {
+    #h1 {
+        font-size: 150%; /* Дополнительное уменьшение размера заголовка на маленьких экранах */
+    }
+
+    .btm_contact a,
+    .btm_more_detailed a {
+        font-size: 18px; /* Уменьшаем размер шрифта кнопок на маленьких экранах */
+        padding: 10px 20px; /* Уменьшаем отступы внутри кнопок */
+    }
+}

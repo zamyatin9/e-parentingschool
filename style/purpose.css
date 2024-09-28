@@ -1,22 +1,40 @@
 .container_purpose{
     align-items: center;
-    max-width: 1200px; /* Ограничение ширины контейнера, если нужно */
+    max-width: 1380px; /* Ограничение ширины контейнера, если нужно */
     width: 100%; /* Ширина 100% для адаптивности */
     margin: auto;
+    margin-top: 1.3027%;
     
 }
 
 .h1_purpose{
     margin: auto;
     width: 100%;
-    text-align: center; /* Центрируем текст по горизонтали */
+    text-align: center;
+    font-size: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
     color: #2A7CFF;
-    font-size: 610%;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 2.464%;
 }
 
 .text_purpose{
-    font-size: 160%;
+    display: flex;
+    width: 75%;
+    
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    flex-shrink: 0;
+    color: #000;
+    text-align: justify;
+    font-size: 125%;
     line-height: 110%;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .container_purpose p{
@@ -47,6 +65,7 @@
 }
 
 .right_block_purpose{
+    width: 50%;
     background-color: #EDF2FA;
     border-radius: 40px;
     padding: 2%;
@@ -61,4 +80,10 @@
     align-items: flex-start; /* Выравниваем элементы по верхнему краю */
     margin-bottom: 15px; /* Отступ между модулями */
 }
+
+.number_moduls{
+    background-color: #FDD2D2;
+    color: #FF4646;
+}
+
 
