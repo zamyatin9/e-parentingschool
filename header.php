@@ -11,16 +11,16 @@
         <link rel="stylesheet" href="style/purpose.css">
         <link rel="stylesheet" href="style/call.css">
         <link rel="stylesheet" href="style/resulte.css">
-    <title>Document</title>
+    <title>Школа современных родителей</title>
 </head>
 <body>
 <div class="header">
     <div class="element_header">
         <div class="element_menu">
             <div class="horizontal_list" id="menuList">
-                <p><a href="#">Главная</a></p>
-                <p><a href="#">О нас</a></p>
-                <p><a href="#">Отзывы</a></p>
+                <p><a href="#about">О нас</a></p>
+                <p><a href="#purpose">Разделы курса</a></p>
+                <p><a href="#">Об авторе курса</a></p>
             </div>
             <button class="menu-button" onclick="toggleMenu()">☰</button> <!-- Кнопка меню для мобильной версии -->
         </div>
