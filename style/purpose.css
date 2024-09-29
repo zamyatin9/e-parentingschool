@@ -1,62 +1,39 @@
-.container_purpose{
+.container_purpose {
     align-items: center;
-    max-width: 1380px; /* Ограничение ширины контейнера, если нужно */
-    width: 100%; /* Ширина 100% для адаптивности */
+    max-width: 1380px;
+    width: 100%;
     margin: auto;
     margin-top: 1.3027%;
-    
 }
 
-.h1_purpose{
-    margin: auto;
-    /* width: 80%; */
+.h1_purpose {
     text-align: center;
-    font-size: 103px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
+    font-size: 38pt;
     color: #2A7CFF;
-    font-style: normal;
     font-weight: 400;
     margin-bottom: 2.464%;
 }
 
-.text_purpose{
-    display: flex;
-    /* width: 75%; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    flex-shrink: 0;
+.text_purpose {
     color: #000;
     text-align: justify;
     font-size: 125%;
     line-height: 110%;
-    font-style: normal;
-    font-weight: 400;
-    
 }
 
-.container_purpose p{
-    margin: 0;
-
-}
-
-.bloks{
+.bloks {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    max-width: 1380px; /* Ограничение ширины контейнера, если нужно */
-    width: 100%; /* Ширина 100% для адаптивности */
-    margin: auto;
+    width: 100%;
     margin-top: 1.957%;
 }
 
-.left_block_purpose{
-    width: 49.711%;
+.left_block_purpose,
+.right_block_purpose {
+    width: 48%; /* Изменяем ширину на одинаковую */
 }
 
-.img_child{
+.img_child {
     background-image: url(../img/purpose.jpg);
     height: 650px;
     border-radius: 40px;
@@ -65,62 +42,101 @@
     background-position: center;
 }
 
-.right_block_purpose{
-    width: 44.711%;
+.right_block_purpose {
     background-color: #EDF2FA;
     border-radius: 40px;
-    padding-top: 1.45%;
-    padding-bottom: 1.45%;
-    padding-left: 2.175%;
-    padding-right: 2.175%;
-
+    padding: 1.45% 2.175%;
 }
 
-.h2_right_block_purpose{
-    display: flex;
-    width: 605px;
-    height: 29px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
+.h2_right_block_purpose {
     color: #2A7CFF;
     text-align: center;
     font-size: 36px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 69.444%;
 }
 
-.moduls{
-    display: flex; /* Используем Flexbox для расположения элементов в строку */
-    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+.moduls {
+    display: flex;
+    align-items: flex-start;
     padding-top: 4.053%;
 }
 
-.number_moduls{
-    display: flex;
-    /* height: 16.4%; */
+.number_moduls {
     width: 9.725%;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
     background-color: #FDD2D2;
     border-radius: 15px;
     color: #FF4646;
     text-align: center;
     font-size: 49.5px;
-    font-style: normal;
-    font-weight: 400;
-    /* line-height: 52.083%;*/
 }
 
-.moduls p{
+.moduls p {
     width: 85.253%;
     color: #000;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 125%;
     padding-left: 5.026%;
 }
 
+/* Убираем медиазапрос для ширины блока */
+@media (min-width: 761px) {
+    .img_child {
+        margin-bottom: 1%; /* Устанавливаем отступ снизу картинки */
+    }
+
+    /* Другие стили для ПК версии */
+    .left_block_purpose,
+    .right_block_purpose {
+        width: 47%; /* Пример ширины для блоков */
+        display: inline-block; /* Или flex, если требуется */
+        vertical-align: top; /* Выравнивание блоков по верхнему краю */
+    }
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 760px) {
+    .bloks {
+        flex-direction: column; /* Изменяем направление на колонку */
+        align-items: center; /* Центрируем элементы */
+        margin-top: 1rem; /* Уменьшаем отступ сверху */
+    }
+
+    .left_block_purpose,
+    .right_block_purpose {
+        width: 93%; /* Устанавливаем ширину на 100% */
+        margin-bottom: 1rem; /* Добавляем отступ между блоками */
+    }
+
+    .img_child {
+        height: 300px; /* Уменьшаем высоту изображения */
+        border-radius: 20px; /* Уменьшаем радиус скругления */
+        width: 100%; /* Устанавливаем ширину картинки на 100% */
+        margin: auto; /* Центрируем изображение */
+    }
+
+    .h1_purpose {
+        font-size: 28pt; /* Уменьшаем размер заголовка */
+        margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+    }
+
+    .text_purpose {
+        font-size: 100%; /* Уменьшаем размер текста */
+        padding-left: 5%; /* Добавляем отступ слева */
+        padding-right: 5%; /* Добавляем отступ справа */
+    }
+
+    .h2_right_block_purpose {
+        font-size: 24px; /* Уменьшаем размер заголовка разделов */
+    }
+
+    .number_moduls {
+        width: 15%; /* Увеличиваем ширину номера модуля для лучшей читаемости */
+        font-size: 30px; /* Уменьшаем размер шрифта номера модуля */
+    }
+
+    .moduls p {
+        font-size: 18px;
+        padding-left: 3%;
+        margin: 0;
+    }
+}

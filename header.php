@@ -22,26 +22,35 @@
                 <p><a href="#purpose">Разделы курса</a></p>
                 <p><a href="#">Об авторе курса</a></p>
             </div>
-            <button class="menu-button" onclick="toggleMenu()">☰</button> <!-- Кнопка меню для мобильной версии -->
+            <button class="menu-button" onclick="toggleMenu()">☰</button> <!-- Кнопка для мобильной версии -->
         </div>
         <div class="btm_go_to_course">
-            <a href="#">Перейти к курсу</a>
+            <a href="reg.php">Перейти к курсу</a>
         </div>
     </div>
 </div>
-
 <script>
     function toggleMenu() {
-    const menu = document.getElementById('menuList');
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-}
-
-// Закрытие меню при клике вне его
-window.onclick = function(event) {
-    const menu = document.getElementById('menuList');
-    if (!event.target.matches('.menu-button') && menu.style.display === 'flex') {
-        menu.style.display = 'none';
+        const menu = document.getElementById('menuList');
+        const items = document.querySelectorAll('.horizontal_list');
+        
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+            items.forEach(item => item.classList.remove('visible'));
+        } else {
+            menu.style.display = 'flex';
+            setTimeout(() => {
+                items.forEach(item => item.classList.add('visible'));
+            }, 10);
+        }
     }
-}
 
+    window.onclick = function(event) {
+        const menu = document.getElementById('menuList');
+        if (!event.target.matches('.menu-button') && menu.style.display === 'flex') {
+            menu.style.display = 'none';
+            const items = document.querySelectorAll('.horizontal_list');
+            items.forEach(item => item.classList.remove('visible'));
+        }
+    }
 </script>

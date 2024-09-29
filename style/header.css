@@ -7,7 +7,6 @@
     width: 100%;  
     background-color: #fff;
     z-index: 1000;  
-   
 }
 
 .element_header {
@@ -20,7 +19,6 @@
 .element_menu {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
     position: relative; /* Добавлено для позиционирования кнопки */
 }
 
@@ -31,7 +29,6 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-left: 20%;
     font-size: 140%;
 }
 
@@ -61,6 +58,42 @@
     cursor: pointer;
 }
 
+.btm_go_to_course {
+    margin-right: 5.417%;
+    padding-top: 0.9%;
+    padding-bottom: 0.9%;
+    padding-left: 1.3%;
+    padding-right: 1.3%;
+    background-color: #EDF2FA;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btm_go_to_course:hover {
+    background-color: #1D2838;
+    color: #EDF2FA;
+}
+
+.btm_go_to_course a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 140%;
+}
+
+.btm_go_to_course a:hover {
+    color: inherit;
+}
+
+@media (min-width) {
+    .element_menu {
+        justify-content: center;
+    }
+
+    .btm_go_to_course {
+        margin-right: 5.417%;
+    }
+}
+
 /* Стили для мобильной версии */
 @media (max-width: 768px) {
     .horizontal_list {
@@ -73,41 +106,30 @@
         background-color: white; /* Фон меню */
         z-index: 10; /* На переднем плане */
         padding: 10px 0; /* Отступы внутри меню */
+        width: 30%;
     }
 
     .menu-button {
         display: block; /* Показываем кнопку на мобильных устройствах */
     }
-}
 
-.btm_go_to_course{
-    margin-right: 5.417%;
-    /* width: 12%; */
-    padding-top: 0.9%;
-    padding-bottom: 0.9%;
-    padding-left: 1.3%;
-    padding-right: 1.3%;
-    /* margin-left: auto; */
-    background-color: #EDF2FA;
-    border-radius: 40px;
-    transition: background-color 0.3s, color 0.3s;
-}
+    .element_menu {
+        margin-left: 3.767%;
+        width: 50%;
+    }
 
-.btm_go_to_course:hover{
-    background-color: #1D2838;
-    color: #EDF2FA;
-  
-}
+    .horizontal_list {
+        margin-left: 2%;
+        background-color: #EDF2FA;
+        color: #2A7CFF;
+        border-radius: 40px;
+        text-align: center;
+        width: 30%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 50%;
+    }
 
-.btm_go_to_course a{
-   
-    text-decoration: none;
-    
-    color: inherit;
-    font-size: 140%;
-    /* letter-spacing: 1px; */
-}
-
-.btm_go_to_course a:hover{
-    color: inherit;
+    .btm_go_to_course {
+        display: none; /* Скрываем кнопку на мобильных устройствах */
+    }
 }

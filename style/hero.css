@@ -1,7 +1,8 @@
 .hero_img {
     margin: auto;
     background-image: url('../img/hero.png');
-    background-size: cover;
+    background-size: cover; /* Изображение будет покрывать весь блок */
+    background-position: center; /* Центрируем изображение */
     border-radius: 40px;
     width: 90%;
     margin-top: 7.292%;
@@ -35,14 +36,18 @@
     padding-top: 2%; /* Отступ сверху */
 }
 
-.btm_contact a {
+.btm_contact a,
+.btm_more_detailed a {
     display: inline-block; 
     padding: 15px 30px; 
-    border: solid 2px #2A7CFF;
     border-radius: 40px; 
     font-size: 22px; 
     text-decoration: none; 
     text-align: center; 
+}
+
+.btm_contact a {
+    border: solid 2px #2A7CFF;
     color: #2A7CFF; 
     transition: background-color 0.3s, color 0.3s; 
 }
@@ -54,12 +59,6 @@
 
 .btm_more_detailed a {
     background-color: #2A7CFF;
-    display: inline-block; 
-    padding: 15px 30px; 
-    border-radius: 40px; 
-    font-size: 22px; 
-    text-decoration: none; 
-    text-align: center; 
     color: #fff; 
     border: solid 2px #2A7CFF;
     transition: background-color 0.3s, color 0.3s; 
@@ -99,8 +98,8 @@
     .hero_img {
         padding-top: 10%; /* Уменьшаем верхний отступ для мобильных устройств */
         padding-bottom: 10%; /* Уменьшаем нижний отступ для мобильных устройств */
-        align-items: center; /* Центрируем элементы по горизонтали */
         text-align: center; /* Центрируем текст */
+        height: auto; /* Позволяем высоте быть авто для адаптации изображения */
     }
 
     #h1 {
@@ -117,6 +116,18 @@
         padding-left: 0; /* Убираем отступ слева */
         gap: 10px; /* Уменьшаем отступ между кнопками */
         padding-bottom: 10%; /* Увеличиваем нижний отступ для кнопок */
+    }
+
+    .btm_contact a {
+        background-color: rgba(255, 255, 255, 0.8); /* Полу-прозрачный белый фон */
+        color: #2A7CFF; /* Цвет текста */
+        border: solid 2px #2A7CFF; /* Цвет границы соответствует цвету текста */
+        transition: background-color 0.3s, color 0.3s; /* Плавный переход для эффектов при наведении */
+    }
+
+    .btm_contact a:hover {
+        background-color: rgba(42, 124, 255, 0.8); /* Полу-прозрачный синий фон при наведении */
+        color: #fff; /* Цвет текста при наведении */
     }
 }
 

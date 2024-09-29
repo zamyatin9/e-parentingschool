@@ -130,7 +130,7 @@
     <div class="container_head">ПОЛУЧИТЬ ДОСТУП К КУРСУ УЖЕ СЕЙЧАС</div>
     <div class="container_call">
         <!-- <div class="buttom_tell_number">Ваш номер телефона</div> -->
-        <a href="#" class="button_call_me">Перейти к курсу</a>
+        <a href="reg.php" class="button_call_me">Перейти к курсу</a>
         
     </div>
   </div>
