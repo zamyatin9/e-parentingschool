@@ -21,7 +21,7 @@
             <div class="horizontal_list" id="menuList">
                 <p><a href="#about">О нас</a></p>
                 <p><a href="#purpose">Разделы курса</a></p>
-                <p><a href="#">Об авторе курса</a></p>
+                <p><a href="#aftor">Об авторе курса</a></p>
             </div>
             <button class="menu-button" onclick="toggleMenu()">☰</button> <!-- Кнопка для мобильной версии -->
         </div>

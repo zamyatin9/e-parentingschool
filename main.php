@@ -157,7 +157,7 @@
 
 <!-- Об авторе -->
 <div class="container_aftor">
-    <div class="h_aftor">Об авторе</div>
+    <div id="aftor" class="h_aftor">Об авторе</div>
     <div class="blocks_aftor">
         <div class="left_block_aftor">
             <div class="img_aftor"></div>

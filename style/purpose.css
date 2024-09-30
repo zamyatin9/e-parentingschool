@@ -18,7 +18,7 @@
     color: #000;
     text-align: justify;
     font-size: 125%;
-    line-height: 110%;
+    line-height: 1.1; /* Упрощение записи */
 }
 
 .bloks {
@@ -26,6 +26,10 @@
     justify-content: space-between;
     width: 100%;
     margin-top: 1.957%;
+}
+
+.block_social a{
+    text-decoration: none;
 }
 
 .left_block_purpose,
@@ -74,14 +78,14 @@
     width: 85.253%;
     color: #000;
     font-size: 20px;
-    line-height: 125%;
+    line-height: 1.25; /* Упрощение записи */
     padding-left: 5.026%;
 }
 
 /* Убираем медиазапрос для ширины блока */
 @media (min-width: 761px) {
     .img_child {
-        /* margin-bottom: 1%;  */
+        margin-bottom: 1%; 
     }
 
     /* Другие стили для ПК версии */
@@ -112,6 +116,7 @@
         border-radius: 20px; /* Уменьшаем радиус скругления */
         width: 100%; /* Устанавливаем ширину картинки на 100% */
         margin: auto; /* Центрируем изображение */
+        background-position: center; /* Обеспечиваем центрирование изображения */
     }
 
     .h1_purpose {
@@ -137,6 +142,6 @@
     .moduls p {
         font-size: 18px;
         padding-left: 3%;
-        margin: 0;
+        margin: 0; /* Убираем отступы по умолчанию */
     }
 }
