@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="style/purpose.css">
         <link rel="stylesheet" href="style/call.css">
         <link rel="stylesheet" href="style/resulte.css">
+        <link rel="stylesheet" href="style/aftor.css">
     <title>Школа современных родителей</title>
 </head>
 <body>

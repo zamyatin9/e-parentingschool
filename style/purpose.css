@@ -35,7 +35,7 @@
 
 .img_child {
     background-image: url(../img/purpose.jpg);
-    height: 650px;
+    height: 1197px;
     border-radius: 40px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +81,7 @@
 /* Убираем медиазапрос для ширины блока */
 @media (min-width: 761px) {
     .img_child {
-        margin-bottom: 1%; /* Устанавливаем отступ снизу картинки */
+        /* margin-bottom: 1%;  */
     }
 
     /* Другие стили для ПК версии */

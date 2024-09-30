@@ -1,0 +1,76 @@
+.container_aftor {
+    margin-top: 1.615%;
+    margin: auto;
+    width: 100%;
+    max-width: 1380px;
+}
+
+.h_aftor {
+    text-align: center;
+    font-size: 96px;
+    color: #2A7CFF;
+}
+
+.blocks_aftor {
+    display: flex;
+    margin-top: 1.615%;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Позволяет блокам переходить на новую строку */
+}
+
+.left_block_aftor,
+.right_block_aftor {
+    width: 49%; /* Одинаковая ширина для обоих блоков */
+}
+
+.img_aftor {
+    background-image: url(../img/aftor.jpg);
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.right_block_aftor {
+    width: 49%;
+    text-align: right; /* Выравниваем содержимое вправо */
+}
+
+
+.text_block_aftor {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.block_social {
+    justify-content: right;
+    align-items: center;
+    margin-top: 4.586%;
+}
+
+.social_icon {
+    width: 11.833%;
+    height: auto;
+    margin-right: 1%;
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) {
+    .blocks_aftor {
+        flex-direction: column; /* Переключаемся на вертикальное выравнивание */
+    }
+
+    .left_block_aftor,
+    .right_block_aftor {
+        width: 97%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .img_aftor {
+        height: 200px;
+        width: 97%;
+        margin: auto;
+    }
+}
