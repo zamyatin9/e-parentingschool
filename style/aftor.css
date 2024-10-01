@@ -28,8 +28,10 @@
     border-radius: 40px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position-y: 10%;
     height: 100%;
+    width: 92%;
+    margin: auto;
 }
 
 .right_block_aftor {
