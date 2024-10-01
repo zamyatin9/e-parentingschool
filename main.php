@@ -6,10 +6,10 @@
     </div>
     <div class="container_btms_hero_img">
         <div class="btm_contact">
-            <a href="#">Связаться с нами</a>
+            <a href="https://schoolofmodernparents.getcourse.ru/cms/system/login">Вход</a>
         </div>
         <div class="btm_more_detailed">
-            <a href="#">Подробнее</a>
+            <a href="https://schoolofmodernparents.getcourse.ru/cms/system/login">Регистрация</a>
         </div>
     </div>
 </div>

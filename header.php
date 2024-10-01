@@ -26,7 +26,7 @@
             <button class="menu-button" onclick="toggleMenu()">☰</button> <!-- Кнопка для мобильной версии -->
         </div>
         <div class="btm_go_to_course">
-            <a href="reg.php">Перейти к курсу</a>
+            <a href="reg.php">Оплатить курс</a>
         </div>
     </div>
 </div>
