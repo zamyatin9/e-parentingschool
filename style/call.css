@@ -1,0 +1,102 @@
+.container_all_call_me {
+    background-color: #EDF2FA;
+    max-width: 1380px;
+    margin: auto;
+    border-radius: 40px;
+
+    opacity: 0;
+    transform: translateY(20px); /* Сдвиг вниз */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.container_all_call_me.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container_head {
+    color: #1D2838;
+    font-size: 46px;
+    text-align: center;
+    padding-top: 2.754%;
+    margin-top: 2.746%;
+    padding-bottom: 1.812%;
+}
+
+.container_call {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 2.754%;
+}
+
+.buttom_tell_number {
+    border: solid 2px #2A7CFF;
+    border-radius: 40px;
+    color: #2A7CFF;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    font-size: 140%;
+    text-align: center;
+}
+
+.button_call_me {
+    border: solid 2px #2A7CFF;
+    border-radius: 40px;
+    background-color: #2A7CFF;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media (min-width:760px){
+    
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 760px) {
+    .container_head {
+        font-size: 28px; /* Уменьшаем размер шрифта заголовка */
+        padding-top: 5%; /* Увеличиваем отступ сверху */
+       
+    }
+
+    .button_call_me {
+        font-size: 14px; /* Уменьшаем размер шрифта кнопки */
+        padding-left: 8%; /* Увеличиваем горизонтальные отступы */
+        padding-right: 8%;
+        width: 100%; /* Кнопка занимает всю ширину контейнера */
+        box-sizing: border-box; /* Учитываем границы и отступы в ширине */
+        margin-top: 10px; /* Отступ сверху для кнопки */
+    }
+
+    .buttom_tell_number {
+        font-size: 120%; /* Уменьшаем размер шрифта для номера телефона */
+        padding-left: 2%; /* Увеличиваем горизонтальные отступы */
+        padding-right: 2%;
+        width: 100%; /* Занимает всю ширину контейнера */
+        box-sizing: border-box; /* Учитываем границы и отступы в ширине */
+        margin-top: 10px; /* Отступ сверху для поля номера телефона */
+    }
+
+    .container_call {
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin: auto;
+    }
+
+    .container_all_call_me {
+        width: 93.5%;
+    }
+}

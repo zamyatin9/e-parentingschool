@@ -1,0 +1,180 @@
+.container_purpose {
+    align-items: center;
+    max-width: 1380px;
+    width: 100%;
+    margin: auto;
+    margin-top: 1.3027%;
+    opacity: 0;
+    transform: translateY(20px); /* Сдвиг вниз */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.container_purpose.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.h1_purpose {
+    text-align: center;
+    font-size: 38pt;
+    color: #2A7CFF;
+    font-weight: 400;
+    margin-bottom: 2.464%;
+}
+
+.text_purpose {
+    color: #000;
+    text-align: justify;
+    font-size: 125%;
+    line-height: 1.1; /* Упрощение записи */
+}
+
+.bloks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.957%;
+
+    opacity: 0;
+    transform: translateY(20px); /* Сдвиг вниз */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Анимация появления */
+.bloks.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.block_social a{
+    text-decoration: none;
+}
+
+
+
+.left_block_purpose,
+.right_block_purpose {
+    width: 48%; /* Изменяем ширину на одинаковую */
+}
+
+.img_child {
+    background-image: url(../img/purpose.jpg);
+    height: 620px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.right_block_purpose {
+    background-color: #EDF2FA;
+    border-radius: 40px;
+    padding: 1.45% 2.175%;
+}
+
+.h2_right_block_purpose {
+    color: #2A7CFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.moduls {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 4.053%;
+    
+    opacity: 0;
+    transform: translateY(100px); /* Сдвиг вниз */
+    transition: opacity 0.6s ease-out, transform 0.8s ease-out;
+}
+
+.moduls.visible {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.number_moduls {
+    width: 9.725%;
+    background-color: #FDD2D2;
+    border-radius: 15px;
+    color: #FF4646;
+    text-align: center;
+    font-size: 49.5px;
+
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.moduls p {
+    width: 85.253%;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.25; /* Упрощение записи */
+    padding-left: 5.026%;
+}
+
+/* Убираем медиазапрос для ширины блока */
+@media (min-width: 761px) {
+    .img_child {
+        margin-bottom: 1%; 
+    }
+
+    /* Другие стили для ПК версии */
+    .left_block_purpose,
+    .right_block_purpose {
+        width: 47%; /* Пример ширины для блоков */
+        display: inline-block; /* Или flex, если требуется */
+        vertical-align: top; /* Выравнивание блоков по верхнему краю */
+    }
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 760px) {
+    .bloks {
+        flex-direction: column; /* Изменяем направление на колонку */
+        align-items: center; /* Центрируем элементы */
+        margin-top: 1rem; /* Уменьшаем отступ сверху */
+    }
+
+    .left_block_purpose,
+    .right_block_purpose {
+        width: 93%; /* Устанавливаем ширину на 100% */
+        margin-bottom: 1rem; /* Добавляем отступ между блоками */
+    }
+
+    .img_child {
+        height: 300px; /* Уменьшаем высоту изображения */
+        border-radius: 20px; /* Уменьшаем радиус скругления */
+        width: 100%; /* Устанавливаем ширину картинки на 100% */
+        margin: auto; /* Центрируем изображение */
+        background-position: center; /* Обеспечиваем центрирование изображения */
+    }
+
+    .h1_purpose {
+        font-size: 28pt; /* Уменьшаем размер заголовка */
+        margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+    }
+
+    .text_purpose {
+        font-size: 100%; /* Уменьшаем размер текста */
+        padding-left: 5%; /* Добавляем отступ слева */
+        padding-right: 5%; /* Добавляем отступ справа */
+    }
+
+    .h2_right_block_purpose {
+        font-size: 24px; /* Уменьшаем размер заголовка разделов */
+    }
+
+    .number_moduls {
+        width: 15%; /* Увеличиваем ширину номера модуля для лучшей читаемости */
+        font-size: 30px; /* Уменьшаем размер шрифта номера модуля */
+    }
+
+    .moduls p {
+        font-size: 18px;
+        padding-left: 3%;
+        margin: 0; /* Убираем отступы по умолчанию */
+    }
+}

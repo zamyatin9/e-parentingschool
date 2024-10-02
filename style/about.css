@@ -1,0 +1,158 @@
+.container_about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1380px; /* Ограничение ширины контейнера */
+    width: 90%;
+    margin: auto;
+
+    opacity: 0; /* Начальное состояние */
+    transform: translateY(20px); /* Сдвинут вниз */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Плавный переход */
+    
+    
+}
+
+.container_about.visible {
+    opacity: 1; /* Полная видимость */
+    transform: translateY(0); /* Возвращаем на место */
+}
+
+.left_container {
+    width: 52.537%;
+    padding-right: 1%;
+}
+
+
+.left_container,
+.right_container {
+    flex: 1;
+}
+
+.text_about,
+.text_about_content {
+    margin: 10px 0;
+}
+
+.h1_about {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2A7CFF;
+    text-transform: uppercase;
+    margin-bottom: 7.169%;
+}
+
+.text_about_content {
+    color: #1D2838;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 4.966%;
+    text-align: justify;
+}
+
+.text_about {
+    font-weight: 400;
+    font-size: 40px;   
+    line-height: 1.2;
+    margin-bottom: 5.71%;
+}
+
+.btm_go_to_course_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;    
+    font-size: 22px;    
+    padding-left: 4.14%;
+    padding-right: 4.14%;
+    border-radius: 40px;
+    background-color: #2A7CFF;
+    text-align: center;
+    width: 19.864%;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 312.5%;
+}
+
+.btm_go_to_course_about a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.right_container {
+    width: 46.233%;
+}
+
+.img_about {
+    background-image: url(../img/about.JPG);
+    height: 47em;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+}
+
+/* Медиа-запросы для адаптации */
+@media (max-width: 1024px) {
+    .container_about {
+        flex-direction: column; /* Вертикальное расположение на средних экранах */
+        align-items: center; /* Центрируем элементы по горизонтали */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .left_container, .right_container {
+        width: 100%; /* Ширина контейнеров на весь экран */
+        padding-right: 0; /* Убираем отступ справа */
+        margin-bottom: 20px; /* Отступ между контейнерами */
+    }
+
+    .text_about {
+        font-size: 30px; /* Уменьшаем размер текста на средних экранах */
+    }
+
+    .btm_go_to_course_about {
+        width: auto; /* Автоматическая ширина кнопки */
+        padding-left: 0; /* Убираем отступ слева */
+        padding-right: 0; /* Убираем отступ справа */
+        margin-top: 10px; /* Отступ сверху для кнопки */
+        font-size: 18px; /* Уменьшаем размер шрифта кнопки */
+    }
+}
+
+@media (max-width: 768px) {
+    .text_about {
+        font-size: 24px; /* Дополнительное уменьшение размера текста на мобильных устройствах */
+        margin-bottom: 4%; /* Уменьшаем нижний отступ */
+    }
+
+    .text_about_content {
+        font-size: 18px; /* Уменьшаем размер текста на мобильных устройствах */
+        line-height: 22px; /* Уменьшаем межстрочный интервал */
+        margin-bottom: 6%; /* Уменьшаем нижний отступ */
+    }
+
+    .img_about {
+        height: auto; /* Автоматическая высота для изображения на мобильных устройствах */
+        max-width: 100%; /* Ограничиваем ширину изображения */
+        border-radius: 20px; /* Уменьшаем радиус закругления для мобильных устройств */
+    }
+}
+
+@media (max-width: 480px) {
+    .h1_about {
+        font-size: 14px; /* Уменьшаем размер заголовка на маленьких экранах */
+        margin-bottom: 5%; /* Уменьшаем нижний отступ */
+    }
+
+    .btm_go_to_course_about {
+        font-size: 16px; /* Уменьшаем размер шрифта кнопки на маленьких экранах */
+        padding-left: 10px; /* Увеличиваем отступы внутри кнопки */
+        padding-right: 10px; 
+        line-height: normal; /* Убираем межстрочный интервал для кнопки */
+    }
+}
