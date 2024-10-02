@@ -1,21 +1,31 @@
-.container_footer{
-    display: flex;
-    width: 100%;
-    background-color: #E7EFFB;
-    margin-top: 2%;
-    padding: 1% 1% 1% 1%;
-    justify-content: center;
-    
+.container_footer {
+    display: flex; /* Используем флекс для выравнивания */
+    width: 100%; /* Занимает всю ширину родительского элемента */
+    background-color: #E7EFFB; /* Цвет фона */
+    margin-top: 2%; /* Отступ сверху */
+    padding: 1%; /* Упрощаем отступы, убираем дублирование */
+    justify-content: center; /* Центрируем содержимое */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем тень для глубины */
 }
 
-.left_block_footer{
-    display: flex;
-    width: 40%;
-    color: #2A7CFF;
-    line-height: 165%;
-    font-size: 14pt;
+.left_block_footer {
+    display: flex; /* Используем флекс для выравнивания внутри блока */
+    width: 40%; /* Ширина блока */
+    color: #2A7CFF; /* Цвет текста */
+    line-height: 1.65; /* Оптимизированная высота строки */
+    font-size: 14pt; /* Размер шрифта */
+    align-items: center; /* Вертикальное выравнивание содержимого */
 }
 
-.ip_block_text_left{
-    padding-right: 3%;
+.ip_block_text_left {
+    padding-right: 3%; /* Отступ справа для текстового блока */
+}
+
+/* Добавим медиа-запрос для адаптивности */
+@media (max-width: 768px) {
+    .left_block_footer {
+        width: 90%;
+        justify-content: center;
+        font-size: 10pt;
+    }
 }

@@ -75,4 +75,10 @@
         width: 97%;
         margin: auto;
     }
+
+    .h_aftor {
+        font-size: 36pt; /* Уменьшаем размер заголовка */
+        margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+    }
+
 }
