@@ -1,0 +1,76 @@
+.container_resulte {
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1380px;
+    margin-top: 1.615%;
+    justify-content: space-between;
+}
+
+.left_block_resulte {
+    width: 49%;
+}
+
+.h1_left_block_resulte {
+    margin-bottom: 4.638%;
+    color: #1D2838;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 156.25%;
+}
+
+.left_block_resulte .element_resulte {
+    background-color: #FDD2D2;
+    color: #FF3333;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2.9%;
+    border-radius: 20px;
+    padding: 4.06% 0; /* Упрощено */
+}
+
+.right_block_resulte {
+    width: 49%;
+}
+
+.right_block_resulte .element_resulte {
+    background-color: #EDF2FA;
+    color: #2A7CFF;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2.9%;
+    border-radius: 20px;
+    padding: 4.06% 0; /* Упрощено */
+}
+
+#element_resulte {
+    padding: 2.3% 0; /* Упрощено */
+}
+
+/* Медиазапрос для экранов шириной 760px и меньше */
+@media (max-width: 760px) {
+    .container_resulte {
+        flex-direction: row; /* Оставляем горизонтальную ориентацию */
+        justify-content: space-around; /* Равномерно распределяем блоки */
+        flex-wrap: wrap; /* Позволяем перенос блоков при необходимости */
+    }
+
+    .left_block_resulte,
+    .right_block_resulte {
+        width: 45%; /* Уменьшаем ширину блоков для лучшего отображения */
+        margin-bottom: 20px; /* Отступ между блоками */
+    }
+
+    .h1_left_block_resulte {
+        font-size: 24px; /* Уменьшаем размер шрифта заголовка */
+        text-align: left; /* Выравнивание текста влево для мобильных */
+    }
+
+    .left_block_resulte .element_resulte,
+    .right_block_resulte .element_resulte {
+        font-size: 18px; /* Уменьшаем размер шрифта элементов */
+        padding: 3% 0; /* Уменьшаем отступы */
+    }
+}
