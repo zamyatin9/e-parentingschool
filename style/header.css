@@ -1,0 +1,149 @@
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1.823%;
+    padding-bottom: 1.823%;
+    width: 100%;  
+    background-color: #fff;
+    z-index: 1000;  
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 2s forwards;
+    
+}
+
+.element_header {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.element_menu {
+    flex-grow: 1;
+    display: flex;
+    position: relative; /* Добавлено для позиционирования кнопки */
+}
+
+.horizontal_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 140%;
+
+    
+}
+
+.horizontal_list p {
+    margin-right: 4.313%;
+}
+
+.horizontal_list a:hover {
+    color: #2A7CFF;
+}
+
+.horizontal-list p:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
+}
+
+.horizontal_list a {
+    text-decoration: none;
+    color: #000; 
+}
+
+/* Стили для кнопки меню */
+.menu-button {
+    display: none; /* Скрываем кнопку по умолчанию */
+    background-color: transparent;
+    border: none;
+    font-size: 24px; /* Размер кнопки */
+    cursor: pointer;
+}
+
+.btm_go_to_course {
+    margin-right: 5.417%;
+    padding-top: 0.9%;
+    padding-bottom: 0.9%;
+    padding-left: 1.3%;
+    padding-right: 1.3%;
+    background-color: #EDF2FA;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btm_go_to_course:hover {
+    background-color: #1D2838;
+    color: #EDF2FA;
+}
+
+.btm_go_to_course a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 140%;
+}
+
+.btm_go_to_course a:hover {
+    color: inherit;
+}
+
+@media (min-width) {
+    .element_menu {
+        justify-content: center;
+    }
+
+    .btm_go_to_course {
+        margin-right: 5.417%;
+    }
+}
+
+/* Стили для мобильной версии */
+@media (max-width: 768px) {
+    .horizontal_list {
+        display: none; /* Скрываем горизонтальный список на мобильных */
+        flex-direction: column; /* Меню будет вертикальным */
+        position: absolute; /* Позиционирование меню */
+        top: 50px; /* Расстояние от верхней части */
+        left: 0; /* Выравнивание по левому краю */
+        width: 100%; /* Ширина на весь экран */
+        background-color: white; /* Фон меню */
+        z-index: 10; /* На переднем плане */
+        padding: 10px 0; /* Отступы внутри меню */
+        width: 30%;
+    }
+
+    .menu-button {
+        display: block; /* Показываем кнопку на мобильных устройствах */
+    }
+
+    .element_menu {
+        margin-left: 3.767%;
+        width: 50%;
+    }
+
+    .horizontal_list {
+        margin-left: 2%;
+        background-color: #EDF2FA;
+        color: #2A7CFF;
+        border-radius: 40px;
+        text-align: center;
+        width: 30%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 50%;
+    }
+
+    .btm_go_to_course {
+        display: none; /* Скрываем кнопку на мобильных устройствах */
+    }
+}

@@ -1,0 +1,21 @@
+.container_footer{
+    display: flex;
+    width: 100%;
+    background-color: #E7EFFB;
+    margin-top: 2%;
+    padding: 1% 1% 1% 1%;
+    justify-content: center;
+    
+}
+
+.left_block_footer{
+    display: flex;
+    width: 40%;
+    color: #2A7CFF;
+    line-height: 165%;
+    font-size: 14pt;
+}
+
+.ip_block_text_left{
+    padding-right: 3%;
+}
