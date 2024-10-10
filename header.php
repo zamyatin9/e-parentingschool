@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="style/footer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-
+        <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">
 
     <title>Школа современных родителей</title>
 

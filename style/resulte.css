@@ -55,6 +55,7 @@
         flex-direction: row; /* Оставляем горизонтальную ориентацию */
         justify-content: space-around; /* Равномерно распределяем блоки */
         flex-wrap: wrap; /* Позволяем перенос блоков при необходимости */
+        width: 95%;
     }
 
     .left_block_resulte,
