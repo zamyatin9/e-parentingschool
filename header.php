@@ -17,8 +17,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
 
 
+    <title>Школа современных родителей</title>
+
+    
        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript" >
+       <script type="text/javascript" >
             (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
             for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -33,7 +36,6 @@
         </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/98532874" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-    <title>Школа современных родителей</title>
 </head>
 <body>
 <div class="header">
