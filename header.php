@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="style/resulte.css">
         <link rel="stylesheet" href="style/aftor.css">
         <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="style/slider.scss">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
         <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">

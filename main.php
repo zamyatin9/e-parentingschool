@@ -157,6 +157,8 @@
         </div>
    </div> 
 
+
+
 <!-- Об авторе -->
 <div class="container_aftor">
     <div id="aftor" class="h_aftor">Об авторе</div>
@@ -183,4 +185,13 @@
 </div>
         
 
+<section>
+
+</section>
+
+
+
+
+
 <script src="js/animation.js"></script>
+<script src="js/slider.js"></script>
