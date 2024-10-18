@@ -1,0 +1,137 @@
+.screen {
+    width: 100%;
+    height: auto; /* Позволяет высоте адаптироваться под содержимое */
+    overflow: hidden; /* Скрывает любые переполнения */
+}
+
+.sim-slider {
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 20px auto;
+    padding: 30px 50px;
+    
+    background-color: white;
+    position: relative;
+    width: 80%;
+    overflow: hidden; /* Скрытие переполнений */
+    height: 300px; /* Позволяет высоте адаптироваться под содержимое */
+}
+
+.sim-slider-element img {
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    height: auto; /* Поддерживаем пропорции изображения */
+    width: 100%; /* Занимает всю ширину родительского элемента */
+  
+    display: block; /* Убирает пробелы под изображением */
+    margin: 0 auto; /* Центрирование изображения */
+    object-fit: cover; /* Обеспечивает заполнение контейнера, сохраняя пропорции */
+}
+
+/* Общие стили */
+.sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: auto;
+    transition: height 0.5s ease;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Высота родительского элемента */
+}
+
+.sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+   
+    margin-top: auto;
+    margin-bottom: auto;
+
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    height: 100%; /* Убедитесь, что высота задана */
+}
+
+
+/* Стили для стрелок навигации */
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+}
+
+div.sim-slider-arrow-left {
+    left: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+}
+
+div.sim-slider-arrow-right {
+    right: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+}
+
+div.sim-slider-arrow-left:hover,
+div.sim-slider-arrow-right:hover {
+    opacity: 1.0; /* Увеличивает непрозрачность при наведении */
+}
+
+/* Стили для точек навигации */
+div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+}
+
+span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .sim-slider {
+     
+        height: 200px; /* Высота адаптируется под содержимое */
+        width: 75%;
+       
+    }
+
+    .sim-slider-element img{
+        padding: 40px;
+    }
+
+    div.sim-slider-arrow-left,
+    div.sim-slider-arrow-right {width: 18px; /* Уменьшаем размер стрелок на мобильных устройствах */
+        height: 30px; /* Уменьшаем размер стрелок на мобильных устройствах */
+        background-size: contain; /* Масштабируем изображение стрелки в пределах блока */
+        top: 50%; /* Центрируем по вертикали */
+        transform: translateY(-50%); /* Центрирование по вертикали */
+    }
+}

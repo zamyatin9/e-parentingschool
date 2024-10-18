@@ -183,15 +183,73 @@
         </div>
     </div>
 </div>
-        
-
-<section>
-
-</section>
 
 
+
+<div class="sim-slider" data-aos="zoom-in">
+<div id="aftor" class="h_aftor">Отзывы</div>
+  <div class="sim-slider-list">
+
+    <div class="sim-slider-element"><img src="img/comments_1.png" alt="0"></div>
+    <div class="sim-slider-element"><img src="img/comments_2.png" alt="1"></div>
+    <div class="sim-slider-element"><img src="img/comments_3.png" alt="2"></div>
+    <div class="sim-slider-element"><img src="img/comments_4.png" alt="3"></div>
+  
+</div>
+  <div class="sim-slider-arrow-left"></div>
+  <div class="sim-slider-arrow-right"></div>
+  <div class="sim-slider-dots"></div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.sim-slider-element');
+  const leftArrow = document.querySelector('.sim-slider-arrow-left');
+  const rightArrow = document.querySelector('.sim-slider-arrow-right');
+  const dotsContainer = document.querySelector('.sim-slider-dots');
+
+  let currentSlide = 0;
+
+  // Функция для отображения текущего слайда
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? '1' : '0';
+    });
+    updateDots(index);
+  }
+
+  // Функция для обновления индикаторов
+  function updateDots(activeIndex) {
+    dotsContainer.innerHTML = ''; // Очистка предыдущих точек
+    slides.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.classList.add('sim-dot');
+      dot.addEventListener('click', () => showSlide(i));
+      if (i === activeIndex) {
+        dot.style.backgroundColor = '#333'; // Активная точка
+      }
+      dotsContainer.appendChild(dot);
+    });
+  }
+
+  // Обработчики событий для стрелок
+  leftArrow.addEventListener('click', () => {
+    currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+    showSlide(currentSlide);
+  });
+
+  rightArrow.addEventListener('click', () => {
+    currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+    showSlide(currentSlide);
+  });
+
+  // Инициализация слайдера
+  showSlide(currentSlide);
+});
+
+</script>
 
 
 
 <script src="js/animation.js"></script>
-<script src="js/slider.js"></script>
